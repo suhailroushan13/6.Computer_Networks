@@ -1,15 +1,14 @@
 import http from "http";
-import https from "https";
 
-const httpPort = 5000; //
-
+const httpPort = 80;
 
 let httpServer = http.createServer((req, res) => {
-  res.end("Hello I am From HTTP Server");
+  res.end(`
+  <h1>Hey I am Suhail Roushan </h1>
+   
+    `);
 });
-
 
 httpServer.listen(httpPort, () => {
   console.log(`SERVER STARTED AT `, httpPort);
 });
-
